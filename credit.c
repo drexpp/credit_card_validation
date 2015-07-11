@@ -26,7 +26,6 @@ int main(){
      
     int totalsum = 0;                       //Uses Luhn's algorithm to validate credit cards
     for(int i = 0; CardNumber != 0;i++){
-     
         if( i%2 == 0){                      //If it's not a 2n digit of CC saves the number and keeps checking the rest of numbers
             totalsum += CardNumber % 10;
         }
@@ -37,14 +36,11 @@ int main(){
         }
     CardNumber = CardNumber/10;
     }
-     
     if (totalsum %10 != 0){                 // If it doesnt pass Luhn's algorithm will prompt out INVALID 
         printf("INVALID\n");
         return 0;
     }
-     
                                             //short if..else statements for credit card names.
- 
     CardNumber < pow(10,16) && cc_card_1 == 37 ? printf("AMEX\n") :((CardNumber < pow(10,17) && (cc_card_2 > 50 && cc_card_2 < 56)) ? printf("MASTERCARD\n") : 
     (CardNumber < pow(10,17) && (cc_card_3 == 4 || cc_card_4 == 4)) ? printf("VISA\n") :printf("INVALID\n"));
     return 0;
