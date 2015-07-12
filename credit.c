@@ -1,5 +1,5 @@
 //Project for cs50
-
+//It follows the Luhn's algorithm in order to determinate if a credit card is valid, also prints the company of it.
 #include<stdio.h>
 #include<cs50.h>
 #include<math.h>
